@@ -98,6 +98,21 @@ dependencies = [
 ]
 
 [[package]]
+name = "embaserver"
+version = "0.1.0"
+dependencies = [
+ "embassy-executor",
+ "embassy-sync 0.5.0",
+ "embassy-time",
+ "embedded-hal-async",
+ "embedded-io-async",
+ "esp-backtrace",
+ "esp-println",
+ "esp32c3-hal",
+ "portable-atomic",
+]
+
+[[package]]
 name = "embassy-executor"
 version = "0.3.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -164,21 +179,6 @@ dependencies = [
  "embedded-hal-async",
  "futures-util",
  "heapless 0.7.17",
-]
-
-[[package]]
-name = "embassybase"
-version = "0.1.0"
-dependencies = [
- "embassy-executor",
- "embassy-sync 0.5.0",
- "embassy-time",
- "embedded-hal-async",
- "embedded-io-async",
- "esp-backtrace",
- "esp-println",
- "esp32c3-hal",
- "portable-atomic",
 ]
 
 [[package]]
